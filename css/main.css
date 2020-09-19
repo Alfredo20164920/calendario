@@ -36,7 +36,54 @@
 }
 
 .mes__contenido{
-    display: none;
+    /* display: none; */
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(7, 1fr);   
+}
+
+.mes__dias{
+    background: #fff;
+    font-weight: 200;
+
+    grid-column: 2 / -2;
+    grid-row: 2 / -2;
+    
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.mes__dias-dia{
+    background: #c5c5c5;
+    color: black;
+    border: 1px solid #fff;
+    display: grid;
+    padding: 1em;
+}
+
+.mes__dias-numero, .mes__dias-nombre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.domingo{
+    font-weight: 500;
+    background: #ce1126;
+}
+
+.otro-mes{
+    background: #000;
+    color: white;
+}
+
+.feriado{
+    background: #575759;
 }
 
 footer{
