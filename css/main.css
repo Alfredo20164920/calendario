@@ -3,3 +3,52 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.contenedor{
+    height: 100vh;
+    width: 100%;
+}
+
+.mes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat, repeat-y;
+    content: center;
+}
+
+.mesSep{
+    height: calc(100% - XXpx);
+    background-image: url("https://images.pexels.com/photos/3800834/pexels-photo-3800834.jpeg?cs=srgb&dl=pexels-hugo-e-3800834.jpg&fm=jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.mesOct{
+    height: calc(100% - XXpx);
+    background-image: url("https://images.pexels.com/photos/5282392/pexels-photo-5282392.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position: center;
+    background-size: cover;
+}
+
+.mes__contenido{
+    display: none;
+}
+
+footer{
+    background: #000;
+    color: white;
+    font-size: 10em;
+    letter-spacing: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
