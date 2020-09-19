@@ -30,7 +30,7 @@
 
 .mesOct{
     height: calc(100% - XXpx);
-    background-image: url("https://images.pexels.com/photos/5282392/pexels-photo-5282392.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-image: url("https://images.pexels.com/photos/383605/pexels-photo-383605.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-position: center;
     background-size: cover;
 }
@@ -47,8 +47,20 @@
     grid-template-rows: repeat(7, 1fr);   
 }
 
+.mes__titulo{
+    grid-column:  3 / span 5;
+    font-weight: 800;
+    font-size: 3em;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .mes__dias{
-    background: #fff;
+    background: transparent;
     font-weight: 200;
 
     grid-column: 2 / -2;
@@ -59,7 +71,7 @@
 }
 
 .mes__dias-dia{
-    background: #c5c5c5;
+    background: rgba(196, 196, 196,0.5);
     color: black;
     border: 1px solid #fff;
     display: grid;
@@ -74,16 +86,16 @@
 
 .domingo{
     font-weight: 500;
-    background: #ce1126;
+    background: rgba(206, 17, 38,0.5);
 }
 
 .otro-mes{
-    background: #000;
+    background: rgba(0, 0, 0, 0.5);
     color: white;
 }
 
 .feriado{
-    background: #575759;
+    background: rgba(87, 87, 89, 0.8);
 }
 
 footer{
